@@ -11,17 +11,6 @@ def render_all(x,y):
         character.draw_now(x,y)
         delay(0.1)
 
-        
-def run_circle():
-    print('circle')
-
-    cx , cy ,r = 400,330,240
-    for deg in range(-90,270,10):
-        x = cx + r *math.cos(deg / 360 *2 * math.pi)
-        y = cy + r *math.sin(deg / 360 *2 * math.pi)
-        render_all(x,y)
-
-
 def run_rectangle():
     print('rectangle')
 
@@ -45,6 +34,14 @@ def run_rectangle():
     for x in range(50 ,400+ 1, 20):
         render_all(x,90)
 
+def run_circle():
+    print('circle')
+
+    cx , cy ,r = 400,330,240
+    for deg in range(-90,270,10):
+        x = cx + r *math.cos(deg / 360 *2 * math.pi)
+        y = cy + r *math.sin(deg / 360 *2 * math.pi)
+        render_all(x,y)
 
 while True:
     run_rectangle()
