@@ -20,6 +20,11 @@ def run_circle():
 
 def run_rectangle():
     print('rectangle')
+    
+
+
+
+    
     pass
 
 
@@ -28,7 +33,7 @@ def run_rectangle():
 
 
 while True:
-    run_circle()
+    # run_circle()
     run_rectangle()
     # break
 
