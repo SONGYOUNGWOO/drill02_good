@@ -26,7 +26,7 @@ def run_rectangle():
     print('rectangle')
 
     # bottom line
-    for x in range(50 , 780 + 1, 20):
+    for x in range(400 , 780 + 1, 20):
         render_all(x,90)
         
     # right line
