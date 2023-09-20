@@ -20,7 +20,14 @@ def run_circle():
 
 def run_rectangle():
     print('rectangle')
-    
+
+    # bottom line
+    for x in range(50 , 780,15):
+        clear_canvas_now()
+        grass.draw_now(400, 30)
+        character.draw_now(x,90)
+        delay(0.1)
+        
 
 
 
@@ -33,8 +40,8 @@ def run_rectangle():
 
 
 while True:
-    # run_circle()
     run_rectangle()
+    # run_circle()
     # break
 
 close_canvas()
