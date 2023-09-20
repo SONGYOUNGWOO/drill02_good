@@ -34,9 +34,12 @@ def run_rectangle():
         #render_all(x,560)
 
     # right line
-    for y in range(90 , 560 -1, 10):
-        render_all(780,y)
+    #for y in range(90 , 560 +1, 10):
+        #render_all(780,y)
         
+    #left line
+    for y in range(560, 90 - 1, -10):
+        render_all(20,y)
 
 
 
