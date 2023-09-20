@@ -26,34 +26,29 @@ def run_rectangle():
     print('rectangle')
 
     # bottom line
-    #for x in range(50 , 780 + 1, 10):
-        #render_all(x,90)
+    for x in range(50 , 780 + 1, 20):
+        render_all(x,90)
+        
+    # right line
+    for y in range(90 , 560 +1, 20):
+        render_all(780,y)
 
     # top line
-    #for x in range(780 , 50 -1, -10):
-        #render_all(x,560)
-
-    # right line
-    #for y in range(90 , 560 +1, 10):
-        #render_all(780,y)
+    for x in range(780 , 50 -1, -20):
+        render_all(x,560)
         
     #left line
-    for y in range(560, 90 - 1, -10):
+    for y in range(560, 90 - 1, -20):
         render_all(20,y)
-
-
-
-    
-    pass
-
-
-
-
+        
+    # bottom line2
+    for x in range(50 ,400+ 1, 20):
+        render_all(x,90)
 
 
 while True:
     run_rectangle()
-    #run_circle()
+    run_circle()
     # break
 
 close_canvas()
